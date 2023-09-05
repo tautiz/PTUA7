@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  web:
+    image: tautiz/web4study:latest
+    volumes:
+      - .:/var/www/html/
+    user: web:web
+    ports:
+      - "80:80"
+    environment:
+      PHP_IDE_CONFIG: 'serverName=web.local'
+      APACHE_SERVER_NAME: web.local
+      APPLICATION_ENV: development
+      APACHE_LOG_DIR: /var/log/apache2
+      APACHE_DOCUMENT_ROOT: /var/www/html
+      APACHE_RUN_USER: web
+      APACHE_RUN_GROUP: web
