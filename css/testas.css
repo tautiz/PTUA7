@@ -5,3 +5,46 @@
 body {
     border-color: green;
 }
+
+header > div {
+    display: inline-block;
+}
+header > img {
+    width: 200px;
+}
+
+/*
+header > div:last-of-type {
+    width: 300px;
+}
+header > div:first-of-type {
+    width: 700px;
+}
+*/
+
+.headerMiddle {
+    width: 700px;
+}
+
+.search_box {
+    width: 300px;
+}
+
+body > div {
+    width: 1200px;
+}
+
+
+nav, main, aside {
+    display: inline-block;
+}
+
+nav {
+    width: 18%;
+}
+
+main {
+    width: 58%;
+}
+
+aside {width: 22%}
