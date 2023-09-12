@@ -1,0 +1,48 @@
+/* Taip aprasome kintamuosius savo CSS'e */
+:root {
+    --main-color: #626262;
+    --secondary-color: #4ca3b9;
+    --text-color: #ffffff;
+    --border-color: #443f3f;
+}
+
+img {
+    width: 100%;
+}
+
+body > header {
+    /* var(--main-color)  - taip panaudojame kintamuosius savo CSS'e */
+    background-color: var(--main-color);
+    /* Uzdedame seseli */
+    box-shadow: 0 0 10px black;
+}
+
+body > main {
+    background-color: var(--main-color);
+    /* Pridedamas ryskumo filtras elementui, kad pasviesintume jo fono spalva */
+    filter: brightness(2);
+    /* Panaikiname margin reiksme nuo virsaus ir apacios, kad nematytume atitraukimo */
+    margin-top: 0;
+    margin-bottom: 0;
+    /* Nustatonas elemento sluoksnis */
+    z-index: -1;
+    /* Kad z-index veikt elemento pozicija negali buti 'static'*/
+    position: relative;
+    /* Uzdedame seseli */
+    box-shadow: 0 0 10px black;
+}
+
+footer {
+    background-color: var(--main-color);
+    /* Uzdedame seseli */
+    box-shadow: 0 0 10px black;
+    height: 150px;
+}
+
+body > nav > * {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}

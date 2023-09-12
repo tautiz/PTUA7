@@ -1,0 +1,53 @@
+:root {
+    --column-one: 18%;
+    --column-two: 54%;
+    --column-three: 22%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    display: flex;
+}
+header > * {
+    float: left;
+}
+
+[alt="Logo"] {
+    width: var(--column-one);
+}
+
+.headerMiddle {
+    width: var(--column-two);
+}
+
+.search_box {
+    width: var(--column-three);
+}
+nav{
+    clear: left;
+}
+body > nav, body > main, body > aside {
+    float: left;
+    margin: 5px;
+    padding: 10px;
+}
+
+body > footer {
+    clear: both;
+}
+
+body > nav {
+    width: var(--column-one);
+}
+
+body > main {
+    width: var(--column-two);
+}
+
+body > aside {
+    width: var(--column-three);
+}
