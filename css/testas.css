@@ -30,13 +30,13 @@ header > div:first-of-type {
     width: 300px;
 }
 
-body > div {
-    width: 1200px;
-}
-
-
 nav, main, aside {
-    display: inline-block;
+    float:left;
+    margin: 5px;
+    padding: 10px;
+}
+footer {
+    clear: both;
 }
 
 nav {
@@ -44,7 +44,7 @@ nav {
 }
 
 main {
-    width: 58%;
+    width: 54%;
 }
 
 aside {width: 22%}
