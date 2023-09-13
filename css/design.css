@@ -1,15 +1,10 @@
 /* Taip aprasome kintamuosius savo CSS'e */
-:root {
-    --main-color: #626262;
-    --secondary-color: #4ca3b9;
-    --text-color: #ffffff;
-    --border-color: #443f3f;
-}
-
 img {
     width: 100%;
 }
-
+body {
+    color: var(--text-color);
+}
 body > header {
     /* var(--main-color)  - taip panaudojame kintamuosius savo CSS'e */
     background-color: var(--main-color);

@@ -1,7 +1,27 @@
+.sachmatai {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-rows:    100px 100px 100px 100px 100px;
+    grid-gap: 10px;
+}
+
 .sachmatai > div {
-    width: 75px;
-    height: 75px;
-    margin: 5px;
     padding: 10px;
-    /*… ??? ...*/
+    border: 1px solid darkgray;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: lightgray;
+}
+
+.sachmatai > div:nth-child(4n+2){
+    background-color: lightblue;
+}
+
+.sachmatai > div:nth-child(4n+4){
+    background-color: lightgreen;
+}
+
+.sachmatai > div:nth-child(2n+16){
+    background-color: lightpink;
 }

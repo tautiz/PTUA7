@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    grid-area: h;
+}
+
+nav{
+    grid-area: n;
+}
+
+body > footer {
+    grid-area: f;
+}
+
+body > main {
+    grid-area: m;
+}
+
+body > aside {
+   grid-area: a;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: 150px auto 200px;
+    grid-template-areas:
+            'h h h'
+            'n m a'
+            'f f f'
+;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+}
+
+[alt="Logo"] {
+    height: 100px;
+    width: fit-content;
+}
