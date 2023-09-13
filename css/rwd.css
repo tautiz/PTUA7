@@ -1,0 +1,44 @@
+@media (max-width: 600px) {
+    body{
+        grid-template-areas:
+            'h h h'
+            'n n n'
+            'm m m'
+            'f f f'
+        ;
+        grid-template-rows: 150px auto auto 200px;
+    }
+    body > aside {
+        display: none;
+    }
+}
+@media (min-width: 600px) {
+    body {
+        grid-template-areas:
+            'h h h'
+            'n m m'
+            'a a a'
+            'f f f'
+        ;
+        grid-template-rows: 150px auto 300px 200px;
+    }
+    body > aside > div {
+        float: left;
+        width: 50%;
+    }
+    body > aside {
+        display: block;
+    }
+}
+@media (min-width: 964px) {
+    body {
+        grid-template-areas:
+            'h h h'
+            'n m a'
+            'f f f'
+        ;
+    }
+    body > aside > div {
+        float: none;
+    }
+}
