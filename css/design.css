@@ -2,14 +2,17 @@
 img {
     width: 100%;
 }
+
 body {
     color: var(--text-color);
 }
+
 body > header {
     /* var(--main-color)  - taip panaudojame kintamuosius savo CSS'e */
     background-color: var(--main-color);
     /* Uzdedame seseli */
     box-shadow: 0 0 10px black;
+    align-items: center;
 }
 
 body > main {
@@ -40,4 +43,53 @@ body > nav > * {
 
 nav ul {
     list-style: none;
+}
+
+.headerMiddle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #003150;
+
+    & div {
+        color: black;
+        margin: 10px;
+        font-size: 1rem;
+    }
+}
+
+.search_box {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 3fr 1fr;
+    padding: 10px;
+}
+
+img[alt="Logo"] {
+    margin: 10px;
+}
+
+body > main {
+    padding: 1rem;
+}
+
+body > aside > div {
+    outline: 1px solid gray;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+body > footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }

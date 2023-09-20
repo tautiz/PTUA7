@@ -1,0 +1,23 @@
+.menu > li > a{
+    text-decoration: none;
+    padding: 5px;
+    margin: 3px;
+    color: black;
+}
+.menu > li{
+    transition: box-shadow 0.25s, scale 0.25s;
+}
+.menu > li:hover{
+    box-shadow: 0px 3px 20px 0px black;
+    scale: 1.2;
+}
+
+body > nav {
+    padding: 1rem;
+    text-align: end;
+}
+.menu {
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 2px solid black;
+}

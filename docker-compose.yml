@@ -7,7 +7,7 @@ services:
       - .:/var/www/html/
     user: web:web
     ports:
-      - "80:80"
+      - "8080:80"
     environment:
       PHP_IDE_CONFIG: 'serverName=web.local'
       APACHE_SERVER_NAME: web.local
