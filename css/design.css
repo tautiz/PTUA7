@@ -13,6 +13,10 @@ body > header {
     /* Uzdedame seseli */
     box-shadow: 0 0 10px black;
     align-items: center;
+    /* Nustatonas elemento sluoksnis */
+    z-index: 2;
+    /* Kad z-index veikt elemento pozicija negali buti 'static'*/
+    position: relative;
 }
 
 body > main {
@@ -22,10 +26,6 @@ body > main {
     /* Panaikiname margin reiksme nuo virsaus ir apacios, kad nematytume atitraukimo */
     margin-top: 0;
     margin-bottom: 0;
-    /* Nustatonas elemento sluoksnis */
-    z-index: -1;
-    /* Kad z-index veikt elemento pozicija negali buti 'static'*/
-    position: relative;
     /* Uzdedame seseli */
     box-shadow: 0 0 10px black;
 }
@@ -35,6 +35,10 @@ footer {
     /* Uzdedame seseli */
     box-shadow: 0 0 10px black;
     height: 150px;
+    /* Nustatonas elemento sluoksnis */
+    z-index: 2;
+    /* Kad z-index veikt elemento pozicija negali buti 'static'*/
+    position: relative;
 }
 
 body > nav > * {
@@ -77,7 +81,7 @@ body > main {
 }
 
 body > aside > div {
-    outline: 1px solid gray;
+    outline: 1px solid rgb(128, 128, 128);
     margin: 1rem;
     display: flex;
     justify-content: center;
