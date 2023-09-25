@@ -5,6 +5,7 @@ let counteris = 0;
 function spausdintiKiekPaspaude() {
     console.log('Paspaude: ! ' + counteris + 'kartus');
 }
+
 function skaiciuoti() {
     counteris++;
 }
@@ -27,18 +28,17 @@ manoForma.addEventListener(
         const elPastoVerte = elementai.elpastas.value;
         const zinutesVerte = elementai.zinute.value;
 
-        // ??? Sukurti DOM elementus
+        const vardoElementas = document.createElement('div');
+        const pastoElementas = document.createElement('div');
+        const zinutesElementas = document.createElement('div');
 
-        // Prideti DOM elementus i 'output' elementa
+        vardoElementas.innerHTML = 'Vardas: ' + vardoVerte;
+        pastoElementas.textContent = 'El.Pastas: ' + elPastoVerte;
+        pastoElementas.className = 'red';
+        zinutesElementas.append('Zinute: ' + zinutesVerte);
+
+        output.append(vardoElementas);
+        output.append(pastoElementas);
+        output.append(zinutesElementas);
     }
 );
-
-
-
-
-
-
-
-
-
-
