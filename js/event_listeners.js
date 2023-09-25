@@ -13,26 +13,23 @@ header.addEventListener('click', spausdintiKiekPaspaude);
 // body.addEventListener('click', skaiciuoti);
 body.onclick = skaiciuoti;
 
-
+const output = document.getElementById('output')
 const manoForma = document.querySelector('#kontaktu_forma');
 
 manoForma.addEventListener(
     'submit',
     function (ivykis) {
         ivykis.preventDefault();
-        console.log('Ivyko submitas');
-        console.log(ivykis);
-
         const forma = ivykis.target;
-        console.log(forma);
-
         const elementai = forma.elements;
-        console.log(elementai);
 
-        console.log(elementai.vardas);
-        console.log(elementai.vardas.value);
-        console.log(elementai.elpastas.value);
-        console.log(elementai.zinute.value);
+        const vardoVerte = elementai.vardas.value;
+        const elPastoVerte = elementai.elpastas.value;
+        const zinutesVerte = elementai.zinute.value;
+
+        // ??? Sukurti DOM elementus
+
+        // Prideti DOM elementus i 'output' elementa
     }
 );
 
