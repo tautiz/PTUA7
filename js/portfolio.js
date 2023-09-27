@@ -1,22 +1,23 @@
 const sachmatai = document.querySelector('.sachmatai');
-const url = '/galerijos_duomenys.json';
+const url = 'https://picsum.photos/v2/list?page=';
 
 function generuotiGalerijosElementa(elementas) {
     const galleryElement = document.createElement('div');
     galleryElement.className = 'galleryElement';
 
     const img = document.createElement('img');
-    img.src = elementas.url;
-    img.alt = elementas.autorius + ' ' + elementas.pavadinimas;
+    img.src = elementas.download_url;
+    img.alt = elementas.author;
+
+    // Jei Ekrane matom tik daly nuotrauku kraus tik tas kurios matosi
+    // ekrane veliau paskrolinus kraun likusias
+    img.loading = 'lazy';
+
     galleryElement.append(img);
 
-    const pavadinimas = document.createElement('span');
-    pavadinimas.textContent = elementas.pavadinimas;
-    galleryElement.append(pavadinimas);
-
-    const data = document.createElement('div');
-    data.textContent = elementas.data;
-    galleryElement.append(data);
+    const autorius = document.createElement('div');
+    autorius.textContent = elementas.author;
+    galleryElement.append(autorius);
     return galleryElement;
 }
 
